@@ -1,0 +1,77 @@
+.Middle_part{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+.contaner{
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.heading{
+    font-size: 15px;
+    margin-bottom: 1em;
+    border: 1px solid black ;
+    margin-top: 100px;
+    padding: 5px;
+    color:gray;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    
+    
+}
+h2{
+    font-size: 1em;
+    font-size: 60px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    margin-top: 1px;
+}
+p{
+    font-size: 1em;
+    margin-bottom: 2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+.member-button{
+    padding: 10px 20px;
+    border: 2px solid;
+    border-radius: 20px;
+    font-size: 1em;
+    cursor: pointer;
+    color: white;
+    background-color: red;
+    height: 50px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.explore-button{
+    background-color: white;
+    border:2px solid gray;
+    color:#333;
+    font-weight: bold;
+    cursor: pointer;
+    width: 198px;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 10px 20px;
+    height: 50px;
+    margin-left: 5px;
+    
+
+}
