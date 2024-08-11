@@ -3,18 +3,17 @@ import image1 from './modern.png';
 import image2 from './machine.png';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
-
 const HBphoto = () => {
-    const imageUrls = [image1, image2,];
-  
-    return (
-      <div className="text-center">
-        <ImageCarousel images={imageUrls} />
-      </div>
-    );
-  };
+  const imageUrls = [image1, image2];
 
-const ImageCarousel = ({ images }) => {
+  return (
+    <div className="text-center bg-gray-200">
+      <ImageOverlay images={imageUrls} />
+    </div>
+  );
+};
+
+const ImageOverlay = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextImage = () => {
@@ -30,23 +29,36 @@ const ImageCarousel = ({ images }) => {
   };
 
   return (
-    <div className="flex items-center justify-center relative w-full mx-auto overflow-hidden bg-pink-100 ">
-      <button 
-        className="text-red-600 border-none p-2 cursor-pointer absolute top-1/2 transform -translate-y-1/2 left-4 hover:bg-blue-500 rounded-lg"
+    <div className="relative w-80 h-80 mx-auto">
+      <div className="absolute inset-0 transition-opacity duration-500 ease-in-out mt-10">
+        <img
+          className={`block mx-auto rounded-lg w-full h-full object-cover ${
+            currentIndex === 0 ? 'opacity-100' : 'opacity-0'
+          }`}
+          src={images[0]}
+          alt="Modern Image"
+        />
+      </div>
+      <div className="absolute inset-0 transition-opacity duration-500 ease-in-out mt-5">
+        <img
+          className={`block mx-auto rounded-lg w-full h-full object-cover ${
+            currentIndex === 1 ? 'opacity-100' : 'opacity-0'
+          }`}
+          src={images[1]}
+          alt="Machine Image"
+        />
+      </div>
+      <button
+        className="text-red-600 border border-blue-800 p-2 cursor-pointer absolute bottom-0 transform -translate-y-1/2 left-4 hover:bg-blue-500 rounded-lg"
         onClick={prevImage}
       >
-        <FaArrowLeft/>
+        <FaArrowLeft />
       </button>
-      <img 
-        className="max-w-full h-auto block mx-auto" 
-        src={images[currentIndex]} 
-        alt={`Image ${currentIndex + 1}`} 
-      />
-      <button 
-        className=" text-red-600 border-none p-2 cursor-pointer absolute top-1/2 transform -translate-y-1/2 right-4 hover:bg-blue-500 rounded-lg"
+      <button
+        className="text-red-600 border border-blue-800 p-2 cursor-pointer absolute bottom-0 transform -translate-y-1/2 right-4 hover:bg-blue-500 rounded-lg"
         onClick={nextImage}
       >
-        <FaArrowRight/>
+        <FaArrowRight />
       </button>
     </div>
   );

@@ -1,15 +1,20 @@
-import './App.css';
-import Header from './Header';
-import HBphoto from './Image';
-import Middle_part from './Middle_Section';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Homepage from './homepage';
+import Signup from './Signup'; // Assuming you have a Signup component
+
 
 function App() {
   return (
-    <div className="App">
-    <Header/>
-    <Middle_part/>
-    <HBphoto/>
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/signup" element={<Signup/>} />
+          {/* Add other routes here as needed */}
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
