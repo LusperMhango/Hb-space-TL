@@ -30,7 +30,7 @@ const Header = () => {
             <div className={`ml-40 absolute top-14 right-0 md:static md:flex-grow md:flex items-center ${isMenuOpen ? 'flex bg-black mt-10 w-full opacity-95 h-78' : 'hidden'} flex-col md:flex-row md:gap-8 gap-4 `}>
                 <a href="#about" className="text-gray-700 hover:text-red-600 transition-colors duration-300 font-bold text-lg ">About</a>
                 <a href="#services" className="text-gray-700 hover:text-red-600 transition-colors duration-300 font-bold text-lg">Services</a>
-                <a href="#events" className="text-gray-700 hover:text-red-600 transition-colors duration-300 font-bold text-lg">Events</a>
+                <Link to="/events" className="text-gray-700 hover:text-red-600 transition-colors duration-300 font-bold text-lg">Events</Link>
                 <a href="#donate" className="text-gray-700 hover:text-red-600 transition-colors duration-300 font-bold text-lg">Donate</a>
                 <a href="#projects" className="text-gray-700 hover:text-red-600 transition-colors duration-300 font-bold text-lg">Projects</a>
               
