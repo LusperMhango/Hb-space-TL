@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaBars, FaSignInAlt, FaUserPlus } from 'react-icons/fa';
 import logo from './HBspace.jpg';
 import { Link } from 'react-router-dom';
-import backgroundImage from './ybn.jpg'
+import backgroundImage from './photo5.jpg'
 
 
 const Header = () => {

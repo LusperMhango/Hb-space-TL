@@ -1,5 +1,5 @@
 import React from "react";
-import Image from './ybn.jpg'
+import Image from './photo5.jpg'
 
 const HB_text= ()=>{
     return(
