@@ -1,5 +1,5 @@
 import React from "react";
-import logo from './HBspace.jpg';
+
 
 const Footer =()=>{
     return(

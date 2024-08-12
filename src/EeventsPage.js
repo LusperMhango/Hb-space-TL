@@ -1,5 +1,5 @@
 import React from 'react';
-import SignUp from './Signup';
+import SignUp from './SignIn';
 import NavBar from './navBar';
 import Eevents from './Eevents';
 
