@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import image1 from './modern.png';
 import image2 from './machine.png';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-import backGroundImage from './photo7.jpg'
+import backGroundImage from './ym.jpg'
 
 const HBphoto = () => {
   const imageUrls = [image1, image2];

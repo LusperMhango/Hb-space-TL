@@ -3,7 +3,7 @@ import member1 from "./machine.png";
 
 const BoardMembers = () => {
   return (
-    <div className="flex flex-col justify-center items-center rounded-lg bg-gray-200 h-screen">
+    <div className="flex flex-col justify-center items-center rounded-lg bg-gray-200 h-50">
       <div className="text-center">
         <h3 className="text-red-600 font-bold font-serif text-xl mt-20 mb-4">
           BOARD MEMBERS
