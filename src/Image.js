@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import image1 from './modern.png';
 import image2 from './machine.png';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import backGroundImage from './photo7.jpg'
 
 const HBphoto = () => {
   const imageUrls = [image1, image2];
@@ -29,17 +30,21 @@ const ImageOverlay = ({ images }) => {
   };
 
   return (
-    <div className="relative w-80 h-80 mx-auto">
-      <div className="absolute inset-0 transition-opacity duration-500 ease-in-out mt-10">
+    <div
+    className='relative justify-center items-center bg-cover bg-center h-96 bg-gray-200'
+    style={{backgroundImage:`url(${backGroundImage})`}}
+    >
+    <div className="relative w-96 h-full mx-auto">
+      <div className="absolute inset-0 transition-opacity duration-500 ease-in-out mt-10 mb-10">
         <img
-          className={`block mx-auto rounded-lg w-full h-full object-cover ${
+          className={`block mx-auto rounded-lg w-scree h-full object-cover ${
             currentIndex === 0 ? 'opacity-100' : 'opacity-0'
           }`}
           src={images[0]}
           alt="Modern Image"
         />
       </div>
-      <div className="absolute inset-0 transition-opacity duration-500 ease-in-out mt-5">
+      <div className="absolute inset-0 transition-opacity duration-500 ease-in-out mt-5 mb-10">
         <img
           className={`block mx-auto rounded-lg w-full h-full object-cover ${
             currentIndex === 1 ? 'opacity-100' : 'opacity-0'
@@ -49,17 +54,18 @@ const ImageOverlay = ({ images }) => {
         />
       </div>
       <button
-        className="text-red-600 border border-blue-800 p-2 cursor-pointer absolute bottom-0 transform -translate-y-1/2 left-4 hover:bg-blue-500 rounded-lg"
+        className="text-red-600 border border-blue-800 p-2 cursor-pointer absolute bottom-0 transform -translate-y-1/2 left-40 hover:bg-blue-500 rounded-lg"
         onClick={prevImage}
       >
         <FaArrowLeft />
       </button>
       <button
-        className="text-red-600 border border-blue-800 p-2 cursor-pointer absolute bottom-0 transform -translate-y-1/2 right-4 hover:bg-blue-500 rounded-lg"
+        className="text-red-600 border border-blue-800 p-2 cursor-pointer absolute bottom-0 transform -translate-y-1/2 right-40 hover:bg-blue-500 rounded-lg"
         onClick={nextImage}
       >
         <FaArrowRight />
       </button>
+    </div>
     </div>
   );
 };

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaBars, FaSignInAlt, FaUserPlus } from 'react-icons/fa';
 import logo from './HBspace.jpg';
 import { Link } from 'react-router-dom';
-import backgroundImage from './photo4.jpg'
+import backgroundImage from './photo5.jpg'
 
 
 const Header = () => {
@@ -33,7 +33,7 @@ const Header = () => {
                 <a href="#events" className="text-gray-700 hover:text-red-600 transition-colors duration-300 font-bold text-lg">Events</a>
                 <a href="#donate" className="text-gray-700 hover:text-red-600 transition-colors duration-300 font-bold text-lg">Donate</a>
                 <a href="#projects" className="text-gray-700 hover:text-red-600 transition-colors duration-300 font-bold text-lg">Projects</a>
-                <a href="#login" className="text-gray-700 hover:text-red-600 transition-colors duration-300"><FaSignInAlt size={26} className='ml-2'/></a>
+              
                 <Link to="/signup" className="text-gray-700 hover:text-red-600 transition-colors duration-300 "><FaUserPlus size={26} className='ml-2'/></Link>
             </div>
             <div className="md:hidden flex items-center cursor-pointer absolute top-2 right-2 mt-7" onClick={toggleMenu}>
@@ -46,14 +46,14 @@ const Header = () => {
                    <button className="text-sm mb-6 mt-8 px-2 py-1.5 border text-gray-500 bg-white rounded-full font-bold font-serif">
                        MEET YOUR BIGGEST EXPECTATIONS
                    </button>
-                   <h2 className="text-4xl font-serif mt-1 mb-6 font-bold">
+                   <h2 className="text-4xl font-serif mt-1 mb-6 font-bold text-gray-800">
                        THE EASY PLACE TO CONNECT WITH <br/> HB SPACE TL
                    </h2>
-                   <p className="text-2xl mb-8 font-serif">
+                   <p className="text-2xl mb-8 font-serif mt-10">
                       Hb Space Tl is a collaborative space centered on <br/>empowering tomorrow with cutting-edge tech..
                    </p>
    
-                   <div className="flex justify-center items-center gap-8 mt-14 mb-8">
+                   <div className="flex justify-center items-center gap-8 mt-40 mb-8">
                        <button className="px-5 py-2 border-2  hover:bg-blue-600 bg-red-600 text-white rounded-lg font-bold cursor-pointer">
                            BECOME A MEMBER
                        </button>

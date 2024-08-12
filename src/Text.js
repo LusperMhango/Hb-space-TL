@@ -1,8 +1,13 @@
 import React from "react";
+import Image from './photo7.jpg'
 
 const HB_text= ()=>{
     return(
-        <div className="flex justify-center bg-gray-200">
+        <div
+        className='relative justify-center items-center bg-cover bg-center '
+        style={{backgroundImage:`url(${Image})`}}
+        >
+        <div className="flex justify-center">
             <div className="text-center p-5">
             <h1 className="font-bold text-red-600 text-2xl mb-8 mt-5 font-serif">WELCOME TO HB SPACE TL</h1>
             <p className="font-serif text-black text-xl">
@@ -34,6 +39,7 @@ const HB_text= ()=>{
              </div>
              
         </div>
+    </div>
     </div>
 
     );
