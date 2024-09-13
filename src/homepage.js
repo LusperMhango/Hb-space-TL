@@ -3,15 +3,13 @@ import BoardMembers from './BoardMembers';
 import Footer from './Footer';
 import Header from './Header';
 import HBphoto from './Image';
-import Middle_part from './Middle_Section';
-import HB_text from './Text';
+import HB_text from './HbOutline';
 
 
 function Homepage() {
   return (
     <div className="home">
     <Header/>
-    {/*<Middle_part/>*/}
     <HBphoto/>
    <HB_text/>
     <BoardMembers/>

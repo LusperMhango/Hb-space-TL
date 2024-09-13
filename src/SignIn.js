@@ -1,6 +1,6 @@
 import React from "react";
 import NavBar from "./navBar";
-import CloseBar from "./closeBar";
+import CloseBar from "./SubFooter";
 import { Link } from "react-router-dom";
 
 const SignUp = () => {
