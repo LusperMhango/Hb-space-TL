@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
-import { FaBars, FaSignInAlt, FaUserPlus } from 'react-icons/fa';
+import { FaBars, FaUserPlus } from 'react-icons/fa';
 import logo from './HBspace.jpg';
 import { Link } from 'react-router-dom';
-//import backgroundImage from './photo5.jpg'
+
 
 
 const Header = () => {
-    // State to manage the menu open/close status
+    
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    // Function to toggle the menu open/close state
+    
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
 
@@ -26,7 +26,7 @@ const Header = () => {
                 </div>
                 <span className="text-xl md:text-3xl font-bold text-black">HB SPACE TL</span>
             </div>
-            <div className={`ml-40 absolute top-14 right-0 md:static md:flex-grow md:flex items-center ${isMenuOpen ? 'flex bg-black mt-10 w-full h-78' : 'hidden'} flex-col md:flex-row md:gap-8 gap-4 `}>
+            <div className={`ml-40 absolute top-14 right-0 md:static md:flex-grow md:flex items-center ${isMenuOpen ? 'flex bg-black h-64 mt-10 w-full h-78' : 'hidden'} flex-col md:flex-row md:gap-8 gap-4 `}>
                 <a href="#about" className="text-gray-900 hover:text-red-600 transition-colors duration-300 font-bold text-lg ">About</a>
                 <a href="#services" className="text-gray-900 hover:text-red-600 transition-colors duration-300 font-bold text-lg">Services</a>
                 <Link to="/events" className="text-gray-900 hover:text-red-600 transition-colors duration-300 font-bold text-lg">Events</Link>
