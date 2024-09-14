@@ -25,7 +25,7 @@ const Footer = () => {
           <a href="https://www.facebook.com/HB space LT" className="hover:text-gray-400">
             <FaFacebook size={32} />
           </a>
-          <a href="#" className="hover:text-gray-400">
+          <a href="https://youtu.be/sKjV2WWduzo?si=meVPiIU5KaGgUzJs" className="hover:text-gray-400">
             <FaYoutube size={32} />
           </a>
           <a href="https://wa.me/265999916443?text=Hello%20HB%20Space%20TL!"

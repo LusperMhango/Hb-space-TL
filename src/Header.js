@@ -17,7 +17,7 @@ const Header = () => {
 
     return (
         <div
-        className='relative justify-center items-center bg-cover bg-center h-screen bg-gray-500'
+        className='relative justify-center items-center bg-cover bg-center h-screen bg-gray-200'
         >
         <header className="flex justify-between items-center p-2 md:p-4 text-white relative rounded-lg bg-blue-500">
             <div className="flex items-center">
@@ -26,7 +26,7 @@ const Header = () => {
                 </div>
                 <span className="text-xl md:text-3xl font-bold text-black">HB SPACE TL</span>
             </div>
-            <div className={`ml-40 absolute top-14 right-0 md:static md:flex-grow md:flex items-center ${isMenuOpen ? 'flex bg-black h-64 mt-10 w-full h-78' : 'hidden'} flex-col md:flex-row md:gap-8 gap-4 `}>
+            <div className={`ml-40 absolute top-14 right-0 md:static md:flex-grow md:flex items-center ${isMenuOpen ? 'flex bg-white h-64 mt-10 w-full h-78' : 'hidden'} flex-col md:flex-row md:gap-8 gap-4 `}>
                 <a href="#about" className="text-gray-900 hover:text-red-600 transition-colors duration-300 font-bold text-lg ">About</a>
                 <a href="#services" className="text-gray-900 hover:text-red-600 transition-colors duration-300 font-bold text-lg">Services</a>
                 <Link to="/events" className="text-gray-900 hover:text-red-600 transition-colors duration-300 font-bold text-lg">Events</Link>
