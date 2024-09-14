@@ -11,7 +11,7 @@ const HB_text = () => {
         <p className="font-serif text-black text-lg md:text-xl">
           As Hb Space TL, we believe in the power of togetherness, collaboration,
           <br className="hidden md:block" />
-          and actively pursuing knowledge. Together, we can make a
+          and actively pursuing knowledge. Together, we can make 
           <br className="hidden md:block" />
            heavy impact.
         </p>
