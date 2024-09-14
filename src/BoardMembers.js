@@ -7,7 +7,7 @@ const BoardMembers = () => {
   return (
     <div className="flex flex-col justify-center items-center rounded-lg bg-gray-200 sm:h-auto h-50">
       <div className="text-center">
-        <h3 className="text-red-800 font-bold font-serif text-3xl mt-10 sm:mt-16 mb-4 shadow-lg">
+        <h3 className="text-red-600 font-bold font-serif text-3xl mt-10 sm:mt-16 mb-4 shadow-lg">
           BOARD MEMBERS <hr/>
         </h3>
         <p className="font-serif text-lg sm:text-xl mb-4">

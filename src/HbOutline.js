@@ -4,7 +4,7 @@ const HB_text = () => {
   return (
     <div className="relative flex justify-center items-center bg-cover bg-center bg-gray-200 p-5">
       <div className="text-center p-5 max-w-5xl mx-auto">
-        <h1 className="font-bold text-red-800 text-3xl md:text-4xl mb-8 mt-5 font-serif shadow-lg">
+        <h1 className="font-bold text-red-600 text-3xl md:text-4xl mb-8 mt-5 font-serif shadow-lg">
           WELCOME TO HB SPACE TL
           <hr />
         </h1>
