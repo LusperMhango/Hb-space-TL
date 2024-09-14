@@ -26,7 +26,7 @@ const Header = () => {
                 </div>
                 <span className="text-xl md:text-3xl font-bold text-black">HB SPACE TL</span>
             </div>
-            <div className={`ml-40 absolute top-14 right-0 md:static md:flex-grow md:flex items-center ${isMenuOpen ? 'flex bg-black mt-10 w-full opacity-95 h-78' : 'hidden'} flex-col md:flex-row md:gap-8 gap-4 `}>
+            <div className={`ml-40 absolute top-14 right-0 md:static md:flex-grow md:flex items-center ${isMenuOpen ? 'flex bg-black mt-10 w-full h-78' : 'hidden'} flex-col md:flex-row md:gap-8 gap-4 `}>
                 <a href="#about" className="text-gray-900 hover:text-red-600 transition-colors duration-300 font-bold text-lg ">About</a>
                 <a href="#services" className="text-gray-900 hover:text-red-600 transition-colors duration-300 font-bold text-lg">Services</a>
                 <Link to="/events" className="text-gray-900 hover:text-red-600 transition-colors duration-300 font-bold text-lg">Events</Link>
@@ -40,29 +40,34 @@ const Header = () => {
             </div>
             
         </header>
-               <div className="flex justify-center"> 
-               <div className="text-center p-5">
-                   <button className="text-sm mb-6 mt-20 px-2 py-1.5 border text-gray-500 bg-white rounded-full font-bold font-serif">
-                       MEET YOUR BIGGEST EXPECTATIONS
-                   </button>
-                   <h2 className="text-5xl font-serif mt-5 mb-6 font-bold text-gray-900 shadow-2xl">
-                       THE EASY PLACE TO CONNECT WITH <br/> HB SPACE TL<hr/>
-                   </h2>
-                   <p className="text-2xl mb-8 font-serif mt-20">
-                      Hb Space Tl is a collaborative space centered on <br/>empowering tomorrow  with<br/> cutting-edge tech..
-                   </p>
-   
-                   <div className="flex justify-center items-center gap-10 mt-20 mb-2">
-                       <Link to="/register" className="px-5 py-2 border-2  hover:bg-blue-600 bg-red-600 text-white rounded-lg font-bold cursor-pointer">
-                           BECOME A MEMBER
-                       </Link>
-                       <button className="px-5 py-2 border-2 w-48 hover:bg-blue-600 bg-white text-gray-900 rounded-lg font-bold cursor-pointer">
-                           EXPLORE
-                       </button>
-                       
-                   </div>
-               </div>
-           </div>
+        <div className="flex justify-center p-5">
+  <div className="text-center p-5 max-w-4xl mx-auto">
+    <button className="text-xs md:text-sm mb-6 mt-10 md:mt-20 px-2 py-1.5 border text-gray-500 bg-white rounded-full font-bold font-serif">
+      MEET YOUR BIGGEST EXPECTATIONS
+    </button>
+    <h2 className="text-3xl md:text-5xl font-serif mt-5 mb-6 font-bold text-gray-900 shadow-2xl">
+      THE EASY PLACE TO CONNECT WITH <br className="hidden md:block" /> HB SPACE TL
+      <hr />
+    </h2>
+    <p className="text-lg md:text-2xl mb-8 font-serif mt-10 md:mt-20">
+      HB Space TL is a collaborative space centered on <br className="hidden md:block" /> empowering tomorrow with
+      <br className="hidden md:block" /> cutting-edge tech.
+    </p>
+
+    <div className="flex flex-col md:flex-row justify-center items-center md:gap-10 mt-10 md:mt-8 mb-2">
+      <Link
+        to="/register"
+        className="w-full md:w-auto px-5 py-2 border-2 hover:bg-blue-600 bg-red-600 text-white rounded-lg font-bold cursor-pointer mb-4 md:mb-0 "
+      >
+        BECOME A MEMBER
+      </Link>
+      <button className="w-full md:w-48 px-5 py-2 border-2 hover:bg-blue-600 bg-white text-gray-900 rounded-lg font-bold cursor-pointer">
+        EXPLORE
+      </button>
+    </div>
+  </div>
+</div>
+
            
            </div>
     );

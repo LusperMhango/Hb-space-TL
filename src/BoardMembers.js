@@ -1,13 +1,13 @@
 import React from "react";
 import member1 from "./hudson.jpg";
-import member2 from "./lusper.jpg"
+import member2 from "./luh.jpg"
 
 const BoardMembers = () => {
   return (
     <div className="flex flex-col justify-center items-center rounded-lg bg-gray-500 sm:h-auto h-50">
       <div className="text-center">
         <h3 className="text-red-800 font-bold font-serif text-3xl mt-10 sm:mt-16 mb-4 shadow-lg">
-          BOARD MEMBERS
+          BOARD MEMBERS <hr/>
         </h3>
         <p className="font-serif text-lg sm:text-xl">
           Our Board of experienced young innovators determined and ready to
