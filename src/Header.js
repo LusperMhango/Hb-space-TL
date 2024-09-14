@@ -57,13 +57,10 @@ const Header = () => {
     <div className="flex flex-col md:flex-row justify-center items-center md:gap-10 mt-10 md:mt-8 mb-2">
       <Link
         to="/register"
-        className="w-full md:w-auto px-5 py-2 border-2 hover:bg-blue-600 bg-red-600 text-white rounded-lg font-bold cursor-pointer mb-4 md:mb-0 "
+        className="w-full md:w-auto px-5 py-2 border-2 hover:bg-blue-600 bg-red-600 text-white rounded-lg font-bold cursor-pointer mb-4 md:mb-0 mt-4 "
       >
         BECOME A MEMBER
       </Link>
-      <button className="w-full md:w-48 px-5 py-2 border-2 hover:bg-blue-600 bg-white text-gray-900 rounded-lg font-bold cursor-pointer">
-        EXPLORE
-      </button>
     </div>
   </div>
 </div>
