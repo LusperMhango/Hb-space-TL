@@ -11,9 +11,9 @@ const HB_text = () => {
         <p className="font-serif text-black text-lg md:text-xl">
           As Hb Space TL, we believe in the power of togetherness, collaboration,
           <br className="hidden md:block" />
-          and actively pursuing knowledge. Together, we can make
+          and actively pursuing knowledge. Together, we can make a
           <br className="hidden md:block" />
-          a heavy impact.
+           heavy impact.
         </p>
         <div className="flex flex-col md:flex-row justify-center items-center gap-5 mt-5">
           <div className="block bg-gray-200 p-5 bg-gray-900 rounded-lg shadow-lg text-center font-serif transition-transform duration-300 hover:-translate-x-2 w-full md:w-80 h-60">
